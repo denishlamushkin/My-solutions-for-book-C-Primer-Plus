@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    printf("Денис\nУсадебная 21/2");
+    printf("Денис\n");
 
     return 0;
 }
