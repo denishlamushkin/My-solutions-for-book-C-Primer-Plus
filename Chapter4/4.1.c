@@ -4,12 +4,12 @@
 int main(void)
 {
     char name[40];
-    char familia[30];
+    char lastName[30];
 
 
-    printf("Введите свою имя и фамилию.\n");
-    scanf("%s %s", name, familia);
-    printf("%s, %s\n", familia, name);
+    printf("Enter your name and last name.\n");
+    scanf("%s %s", name, lastName);
+    printf("%s, %s\n", lastName, name);
 
 
     return 0;
