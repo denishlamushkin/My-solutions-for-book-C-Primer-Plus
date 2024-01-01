@@ -3,10 +3,10 @@
 int main(void)
 {
     float numeber;
-    printf("Введите число с плавающей запятой.\n");
+    printf("Enter number with floating number.\n");
     scanf("%f", &numeber);
-    printf("Вы ввели число %.1f или %.1e\n", numeber, numeber);
-    printf("Что также является %+.3f или %.3E\n", numeber,numeber);
+    printf("You typerd number %.1f or %.1e\n", numeber, numeber);
+    printf("Which is also %+.3f or %.3E\n", numeber,numeber);
 
     return 0;
 }
