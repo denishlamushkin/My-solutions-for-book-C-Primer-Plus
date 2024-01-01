@@ -6,9 +6,9 @@ int main(void)
     float height;
     char name[40];
 
-    printf("Введите свое имя и рост в см.\n");
+    printf("Enter your name and height in cm.\n");
     scanf("%s %f", name, &height);
 
-    printf("%s, ваш рост составляет %.2fм\n", name, height / 100);
+    printf("%s, your height is %.2fm\n", name, height / 100);
     return 0;
 }
