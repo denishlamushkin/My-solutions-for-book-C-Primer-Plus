@@ -5,7 +5,7 @@
 int main(void)
 {
     char name[40];
-    printf("Пожалуйста, введите свое имя.\n");
+    printf("Please, enter your name.\n");
     scanf("%s", name);
     int lenght =  strlen(name);
     printf("\"%s\"\n",name);
