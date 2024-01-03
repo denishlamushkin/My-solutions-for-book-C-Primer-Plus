@@ -1,14 +1,19 @@
 #include <stdio.h>
 #include <string.h>
+#include <wchar.h>
+#include <locale.h>
+
+// updated for different languages
 int main(void)
 {
     
-    char name[20], surname[20];
+    wchar_t name[20], surname[20];
+    setlocale(LC_ALL, "");
     printf("Enter your name:\n");
-    scanf("%s", name);
+    wscanf(L"%ls", name);
     printf("Enter your surname:\n");
-    scanf("%s", surname);
-    printf("%s %s\n", name, surname);
-    printf("%*d %*d\n", strlen(name)/2, strlen(name)/2, strlen(surname)/2, strlen(surname)/2);
-    printf("%-*d %-*d\n", strlen(name)/2, strlen(name)/2, strlen(surname)/2, strlen(surname)/2);
+    wscanf(L"%ls", surname);
+    printf("%ls %ls\n", name, surname);
+    printf("%*ld %*ld\n", wcslen(name), wcslen(name), wcslen(surname), wcslen(surname));
+    printf("%-*ld %-*ld\n", wcslen(name), wcslen(name), wcslen(surname), wcslen(surname));
 }
