@@ -9,11 +9,11 @@ int main(void)
     
     wchar_t name[20], surname[20];
     setlocale(LC_ALL, "");
-    printf("Enter your name:\n");
+    wprintf(L"Enter your name:\n");
     wscanf(L"%ls", name);
-    printf("Enter your surname:\n");
+    wprintf(L"Enter your surname:\n");
     wscanf(L"%ls", surname);
-    printf("%ls %ls\n", name, surname);
-    printf("%*ld %*ld\n", wcslen(name), wcslen(name), wcslen(surname), wcslen(surname));
-    printf("%-*ld %-*ld\n", wcslen(name), wcslen(name), wcslen(surname), wcslen(surname));
+    wprintf(L"%ls %ls\n", name, surname);
+    wprintf(L"%*ld %*ld\n", wcslen(name), wcslen(name), wcslen(surname), wcslen(surname));
+    wprintf(L"%-*ld %-*ld\n", wcslen(name), wcslen(name), wcslen(surname), wcslen(surname));
 }
